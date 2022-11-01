@@ -39,7 +39,7 @@ public class Program {
 
 
         for (Shape shp: list){
-            System.out.printf(String.format("%.2f", shp.area()));
+            System.out.printf("%.2f", shp.area());
         }
 
 
