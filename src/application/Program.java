@@ -23,6 +23,7 @@ public class Program {
             System.out.println("Shape #"+ i +"data:");
             System.out.println("Rectangle or Circle (r/c) ?");
             char shapeType = sc.next().charAt(0);
+            sc.nextLine();
             System.out.print("Color (BLACK/BLUE/RED):");
             String shapeColor = sc.nextLine();
             if (shapeType =='r'){
