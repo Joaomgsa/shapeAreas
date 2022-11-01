@@ -11,10 +11,6 @@ public class Rectangle extends Shape{
         super();
     }
 
-    public Rectangle(Double width, Double height) {
-        this.width = width;
-        this.height = height;
-    }
 
     public Rectangle(Color color, Double width, Double height) {
         super(color);

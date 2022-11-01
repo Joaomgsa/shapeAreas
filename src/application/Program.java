@@ -1,6 +1,9 @@
 package application;
 
+import entities.Circle;
+import entities.Rectangle;
 import entities.Shape;
+import entities.enums.Color;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,15 +34,17 @@ public class Program {
                 double shapeWidth = sc.nextDouble();
                 System.out.print("Height :");
                 double shapeHeight = sc.nextDouble();
+                list.add(new Rectangle(Color.valueOf(shapeColor),shapeWidth,shapeHeight));
             }else {
                 System.out.print("Radius :");
                 double shapeRadius = sc.nextDouble();
+                list.add(new Circle(Color.valueOf(shapeColor),shapeRadius));
             }
         }
 
 
         for (Shape shp: list){
-            System.out.printf("%.2f", shp.area());
+            System.out.printf("%.2f%n",shp.area());
         }
 
 

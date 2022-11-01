@@ -6,7 +6,7 @@ public class Circle extends Shape{
 
     private Double radius;
 
-    public Circle () {
+    public Circle (String shapeColor, double shapeRadius) {
 
     }
 
